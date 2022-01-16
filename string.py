@@ -46,3 +46,32 @@ print(f'Hi {name}. You are {age} years old.')  # f for formatted.
 print('Hi {}. You are {} years old.'.format('Arafat', '25'))
 print('Hi {}. You are {} years old.'.format(name, age))
 print('Hi {1}. You are {0} years old.'.format(name, age))
+print('Hi {new_name}. You are {age} years old.'.format(new_name='atik', age=100))
+
+# access of string / string slicing
+# [start]
+# [start:end]
+# [start:end:step over]
+# [start:] -> starting point to end point
+# [:end] -> starting point to end point
+# [::step over] -> starting point to end point with step over
+# [-1]  -> last value
+# [::-1]  -> reverse value
+
+selfish = '123456789'
+print(selfish[0])
+print(selfish[1])
+print(selfish[2])
+print(selfish)
+print('range : '+selfish[0:4])
+print('step range : '+selfish[0:8:2])
+print('range with only start till end : '+selfish[3:])
+print('range with only end point: '+selfish[:3])
+print('start to end with step-over: '+selfish[::3])
+print('end to start with step-over: '+selfish[7:1:-1])
+print('last value: '+selfish[-1])
+print('reverse value: '+selfish[::-1])
+
+# immutability
+# string are immutability. you can reassign string name='nipu'.
+# but you can't change string like name[0]='a'
